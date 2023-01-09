@@ -110,7 +110,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             CustomTextButton(
                               title: 'Sign In',
                               onPressed: () {
-                                Navigator.pushNamed(context, '/sign-in');
+                                Navigator.pushNamedAndRemoveUntil(
+                                    context, '/sign-in', (route) => false);
                               },
                             )
                           ],
