@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bank_sha_e_money_apps/ui/pages/onboarding_page.dart';
 import 'package:flutter_bank_sha_e_money_apps/ui/pages/sign_in_page.dart';
+import 'package:flutter_bank_sha_e_money_apps/ui/pages/sign_up_page.dart';
+import 'package:flutter_bank_sha_e_money_apps/ui/pages/sign_up_set_ktp_page.dart';
+import 'package:flutter_bank_sha_e_money_apps/ui/pages/sign_up_set_profile_page.dart';
+import 'package:flutter_bank_sha_e_money_apps/ui/pages/sign_up_success_page.dart';
 import 'package:flutter_bank_sha_e_money_apps/ui/pages/splash_page.dart';
 
 void main() => runApp(const MyApp());
@@ -16,6 +20,10 @@ class MyApp extends StatelessWidget {
         '/': (context) => const SplashPage(),
         '/onboarding': (context) => const OnboardingPage(),
         '/sign-in': (context) => const SignInPage(),
+        '/sign-up': (context) => const SignUpPage(),
+        '/sign-up-set-profile': (context) => const SignUpSetProfilePage(),
+        '/sign-up-set-ktp': (context) => const SignUpSetKtpPage(),
+        '/sign-up-success': (context) => const SignUpSuccessPage(),
       },
     );
   }
