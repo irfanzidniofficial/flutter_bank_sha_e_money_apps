@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bank_sha_e_money_apps/shared/theme.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeTipsItem extends StatelessWidget {
   final String imageUrl;
@@ -16,7 +17,11 @@ class HomeTipsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () async {
+        if (await canLaunchUrl(Uri.parse(url))) {
+          launchUrl(Uri.parse(url));
+        }
+      },
       child: Container(
         width: 155,
         height: 176,
