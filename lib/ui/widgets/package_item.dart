@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:flutter_bank_sha_e_money_apps/shared/shared_method.dart';
 
 import '../../shared/theme.dart';
 
@@ -43,7 +44,7 @@ class PackageItem extends StatelessWidget {
             height: 2,
           ),
           Text(
-            'Rp $price',
+            formatCurrency(price),
             style: greyTextStyle.copyWith(
               fontSize: 12,
             ),
