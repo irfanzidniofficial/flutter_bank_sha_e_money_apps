@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bank_sha_e_money_apps/shared/shared_method.dart';
 import 'package:flutter_bank_sha_e_money_apps/shared/theme.dart';
 import 'package:flutter_bank_sha_e_money_apps/ui/widgets/buttons.dart';
 
@@ -18,8 +19,14 @@ class _PinPageState extends State<PinPage> {
         pinController.text = pinController.text + number;
       });
     }
-    if (pinController.text == '123123') {
-      Navigator.pop(context, true);
+
+    if (pinController.text.length == 6) {
+      if (pinController.text == '123123') {
+        Navigator.pop(context, true);
+      } else {
+        showCustomSnackbar(
+            context, 'PIN yang anda masukan salah. Silahkan coba lagi ');
+      }
     }
   }
 
