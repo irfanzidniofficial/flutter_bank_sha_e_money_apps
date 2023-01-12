@@ -1,10 +1,18 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
+import 'package:flutter_bank_sha_e_money_apps/models/sign_up_form_model.dart';
 import 'package:flutter_bank_sha_e_money_apps/shared/theme.dart';
 
 import '../widgets/buttons.dart';
 
 class SignUpSetKtpPage extends StatelessWidget {
-  const SignUpSetKtpPage({super.key});
+  final SignUpFormModel data;
+
+  const SignUpSetKtpPage({
+    Key? key,
+    required this.data,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
