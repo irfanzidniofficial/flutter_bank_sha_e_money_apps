@@ -187,7 +187,7 @@ class HomePage extends StatelessWidget {
             height: 28,
           ),
           Text(
-            '**** ***** **** 1280',
+            '**** ***** **** 128',
             style: whiteTextStyle.copyWith(
               fontSize: 18,
               fontWeight: medium,
@@ -405,10 +405,10 @@ class HomePage extends StatelessWidget {
           const SizedBox(
             height: 14,
           ),
-          SingleChildScrollView(
+          const SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
-              children: const [
+              children: [
                 HomeUserItem(
                   imageUrl: 'assets/img_friend1.png',
                   username: 'yuanita',
@@ -452,10 +452,10 @@ class HomePage extends StatelessWidget {
           const SizedBox(
             height: 14,
           ),
-          Wrap(
+          const Wrap(
             spacing: 17,
             runSpacing: 18,
-            children: const [
+            children: [
               HomeTipsItem(
                 imageUrl: 'assets/img_tips1.png',
                 title: 'Best tips for using a credit card',
